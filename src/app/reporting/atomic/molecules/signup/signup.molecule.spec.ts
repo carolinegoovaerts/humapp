@@ -1,6 +1,6 @@
-import {async} from "q";
-import {TestBed} from "@angular/core/testing";
-import {SignUpComponent} from "./signup.molecule";
+import {async} from 'q';
+import {TestBed} from '@angular/core/testing';
+import {SignUpComponent} from './signup.molecule';
 
 describe('SignUpComponent', () => {
   let component: SignUpComponent;
@@ -21,6 +21,6 @@ describe('SignUpComponent', () => {
   });
 
   it('should contain have as text sign up', () => {
-    expect(component.comment.length).toBeGreaterThan(3);
-  })
+    expect(component.comment.length).toBeGreaterThan(0);
+  });
 });

@@ -1,7 +1,7 @@
-import {TestBed} from "@angular/core/testing";
-import {async} from "q";
-import {MapComponent} from "./map.molecule";
-import {ReportComponent} from "../report/report.molecule";
+import {TestBed} from '@angular/core/testing';
+import {async} from 'q';
+import {MapComponent} from './map.molecule';
+import {ReportComponent} from '../report/report.molecule';
 
 describe('ReportComponent', () => {
   let component: MapComponent;
@@ -26,6 +26,6 @@ describe('ReportComponent', () => {
   });
 
   it('should have a paragraph text', () => {
-    expect(component.comment.length).toBeGreaterThan(3);
+    expect(component.comment.length).toBeGreaterThan(0);
   });
 });

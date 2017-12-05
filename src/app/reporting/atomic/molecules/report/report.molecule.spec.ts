@@ -25,6 +25,6 @@ describe('ReportComponent', () => {
   });
 
   it('should have comment', () => {
-    expect(component.comment.length).toBeGreaterThan(3);
-  })
+    expect(component.comment.length).toBeGreaterThan(0);
+  });
 });

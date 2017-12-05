@@ -4,8 +4,8 @@ import {ReportingComponent} from './reporting.template';
 import {HeaderComponent} from '../organisms/header/header.organism';
 import {ReportingMapComponent} from '../organisms/reporting-map/reporting-map.organism';
 import {ReportComponent} from '../molecules/report/report.molecule';
-import {MapComponent} from "../molecules/map/map.molecule";
-import {SignUpComponent} from "../molecules/signup/signup.molecule";
+import {MapComponent} from '../molecules/map/map.molecule';
+import {SignUpComponent} from '../molecules/signup/signup.molecule';
 
 describe('ReportingComponent', () => {
 
