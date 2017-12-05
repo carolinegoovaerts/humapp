@@ -1,4 +1,4 @@
-import { HomePage } from './app.po';
+import {HomePage} from './app.po';
 
 describe('Hum App', () => {
   let page: HomePage;
@@ -8,7 +8,12 @@ describe('Hum App', () => {
   });
 
   it('should display title', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Hum App');
+    HomePage.navigateTo();
+    expect(HomePage.getTitleText()).toEqual('Hum App');
+  });
+
+  it('should contain reporting on map', () => {
+    HomePage.navigateTo();
+    expect(HomePage.getReportingOnMap().isPresent()).toBeTruthy();
   });
 });
