@@ -1,19 +1,23 @@
 import {HomePage} from './app.po';
+import {ElementFinder} from 'protractor';
 
 describe('Hum App', () => {
-  let page: HomePage;
-
-  beforeEach(() => {
-    page = new HomePage();
-  });
+  function assertPresent(element: ElementFinder) {
+    expect(element.isPresent()).toBeTruthy().then();
+  }
 
   it('should display title', () => {
     HomePage.navigateTo();
-    expect(HomePage.getTitleText()).toEqual('Hum App');
+    expect(HomePage.getTitleText()).toEqual('Hum App').then();
   });
 
-  it('should contain reporting section', () => {
+  it('should contain the reporting map section', () => {
     HomePage.navigateTo();
-    expect(HomePage.getReportingSection().isPresent()).toBeTruthy();
+    assertPresent(HomePage.getReportingMapSection());
+  });
+
+  it('should contain the report section', () => {
+    HomePage.navigateTo();
+    assertPresent(HomePage.getReportSection());
   });
 });

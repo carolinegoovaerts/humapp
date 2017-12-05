@@ -5,6 +5,6 @@ import {Component} from '@angular/core';
   templateUrl: './reporting-map.organism.html',
   styleUrls: ['./reporting-map.organism.css']
 })
-export class ReportingOnMapComponent {
+export class ReportingMapComponent {
   intro = '[ Meldingen op kaart ]';
 }

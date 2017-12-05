@@ -9,7 +9,11 @@ export class HomePage {
     return element(by.css('app-root h1')).getText();
   }
 
-  static getReportingSection() {
-    return element(by.css('app-root #reporting'));
+  static getReportingMapSection() {
+    return element(by.css('app-root .reporting-map'));
+  }
+
+  static getReportSection() {
+    return element(by.css('app-root .report'));
   }
 }

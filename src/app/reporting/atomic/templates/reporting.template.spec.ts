@@ -2,7 +2,8 @@ import {TestBed} from '@angular/core/testing';
 import {async} from 'q';
 import {ReportingComponent} from './reporting.template';
 import {HeaderComponent} from '../organisms/header/header.organism';
-import {ReportingOnMapComponent} from '../organisms/reporting-map/reporting-map.organism';
+import {ReportingMapComponent} from '../organisms/reporting-map/reporting-map.organism';
+import {ReportComponent} from '../molecules/report/report.molecule';
 
 describe('ReportingComponent', () => {
 
@@ -11,7 +12,8 @@ describe('ReportingComponent', () => {
       declarations: [
         ReportingComponent,
         HeaderComponent,
-        ReportingOnMapComponent
+        ReportingMapComponent,
+        ReportComponent
       ],
     }).compileComponents();
   }));
