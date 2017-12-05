@@ -11,11 +11,6 @@ describe('Hum App', () => {
     expect(HomePage.getTitleText()).toEqual('Hum App').then();
   });
 
-  it('should contain the reporting map section', () => {
-    HomePage.navigateTo();
-    assertPresent(HomePage.getReportingMapSection());
-  });
-
   it('should contain the report section', () => {
     HomePage.navigateTo();
     assertPresent(HomePage.getReportSection());
@@ -24,5 +19,10 @@ describe('Hum App', () => {
   it('should contain the sign up section', () => {
     HomePage.navigateTo();
     assertPresent(HomePage.getSignUpSection());
+  });
+
+  it('should contain the map section', () => {
+    HomePage.navigateTo();
+    assertPresent(HomePage.getMapSection());
   });
 });

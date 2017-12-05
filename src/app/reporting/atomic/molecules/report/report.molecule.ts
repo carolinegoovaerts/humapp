@@ -6,4 +6,5 @@ import {Component} from '@angular/core';
   styleUrls: ['./report.molecule.css']
 })
 export class ReportComponent {
+  comment = '[ Melding maken ]';
 }

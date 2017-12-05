@@ -9,15 +9,15 @@ export class HomePage {
     return element(by.css('app-root h1')).getText();
   }
 
-  static getReportingMapSection() {
-    return element(by.css('app-root .reporting-map'));
-  }
-
   static getReportSection() {
     return element(by.css('app-root .report'));
   }
 
   static getSignUpSection() {
     return element(by.css('app-root .sign-up'));
+  }
+
+  static getMapSection() {
+    return element(by.css('app-root .map'));
   }
 }

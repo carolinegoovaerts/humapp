@@ -4,13 +4,15 @@ import {ReportingMapComponent} from './atomic/organisms/reporting-map/reporting-
 import {HeaderComponent} from './atomic/organisms/header/header.organism';
 import {ReportComponent} from './atomic/molecules/report/report.molecule';
 import {SignUpComponent} from "./atomic/molecules/signup/signup.molecule";
+import {MapComponent} from "./atomic/molecules/map/map.molecule";
 
 @NgModule({
   declarations: [
+    ReportingComponent,
     HeaderComponent,
     ReportingMapComponent,
+    MapComponent,
     ReportComponent,
-    ReportingComponent,
     SignUpComponent
   ],
   exports: [

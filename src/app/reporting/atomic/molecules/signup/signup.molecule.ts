@@ -6,4 +6,5 @@ import {Component} from "@angular/core";
   styleUrls: ['./signup.molecule.css']
 })
 export class SignUpComponent {
+  comment = '[ Aanmelden ]';
 }
