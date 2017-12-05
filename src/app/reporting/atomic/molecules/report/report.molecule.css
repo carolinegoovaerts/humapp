@@ -1,4 +1,5 @@
-div.report {
-  min-height: 300px;
-  background-color: lightcyan;
+.report {
+  background-color: red;
+  height: 100px;
+  margin-bottom: 1em;
 }

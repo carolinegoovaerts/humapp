@@ -16,4 +16,8 @@ export class HomePage {
   static getReportSection() {
     return element(by.css('app-root .report'));
   }
+
+  static getSignUpSection() {
+    return element(by.css('app-root .sign-up'));
+  }
 }

@@ -20,4 +20,9 @@ describe('Hum App', () => {
     HomePage.navigateTo();
     assertPresent(HomePage.getReportSection());
   });
+
+  it('should contain the sign up section', () => {
+    HomePage.navigateTo();
+    assertPresent(HomePage.getSignUpSection());
+  });
 });
