@@ -1,4 +1,4 @@
-import { browser, by, element } from 'protractor';
+import {browser, by, element} from 'protractor';
 
 export class HomePage {
   static navigateTo() {
@@ -9,7 +9,7 @@ export class HomePage {
     return element(by.css('app-root h1')).getText();
   }
 
-  static getReportingOnMap() {
-    return element(by.css('#reporting'));
+  static getReportingSection() {
+    return element(by.css('app-root #reporting'));
   }
 }

@@ -1,14 +1,12 @@
 import {async, TestBed} from '@angular/core/testing';
 import {AppComponent} from './app.component';
-import {ReportingComponent} from '../reporting/atomic/templates/reporting.template';
+import {ReportingModule} from "../reporting/reporting.module";
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent,
-        ReportingComponent
-      ],
+      declarations: [AppComponent],
+      imports: [ReportingModule]
     }).compileComponents();
   }));
 
@@ -16,11 +14,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
-  }));
-
-  it(`should have as title 'Hum App'`, async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('Hum App');
   }));
 });

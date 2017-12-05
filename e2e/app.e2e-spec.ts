@@ -12,8 +12,8 @@ describe('Hum App', () => {
     expect(HomePage.getTitleText()).toEqual('Hum App');
   });
 
-  it('should contain reporting on map', () => {
+  it('should contain reporting section', () => {
     HomePage.navigateTo();
-    expect(HomePage.getReportingOnMap().isPresent()).toBeTruthy();
+    expect(HomePage.getReportingSection().isPresent()).toBeTruthy();
   });
 });
