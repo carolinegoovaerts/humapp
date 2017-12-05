@@ -1,6 +1,6 @@
 import {TestBed} from '@angular/core/testing';
 import {async} from 'q';
-import {ReportingOnMapComponent} from "./reporting-map.organism";
+import {ReportingOnMapComponent} from './reporting-map.organism';
 
 describe('ReportingOnMapComponent', () => {
 
