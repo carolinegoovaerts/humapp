@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "verify": "ng lint && ng test -sr -cc",
+    "verify": "ng lint && ng test -sr -cc && ng e2e",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

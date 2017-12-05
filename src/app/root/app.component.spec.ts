@@ -1,14 +1,13 @@
 import {async, TestBed} from '@angular/core/testing';
 import {AppComponent} from './app.component';
-import {ReportingTemplate} from '../reporting/atomic/templates/reporting.template';
+import {ReportingComponent} from '../reporting/atomic/templates/reporting.template';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
-    const promise = TestBed.configureTestingModule({
-      // @Pipe/@Directive/@Component
+    TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        ReportingTemplate
+        ReportingComponent
       ],
     }).compileComponents();
   }));

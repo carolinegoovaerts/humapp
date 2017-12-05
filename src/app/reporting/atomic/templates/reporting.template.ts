@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'reporting-template',
+  selector: 'app-reporting',
   templateUrl: './reporting.template.html'
 })
-export class ReportingTemplate {
+export class ReportingComponent {
 }

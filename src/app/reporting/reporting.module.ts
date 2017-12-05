@@ -1,12 +1,12 @@
 import {NgModule} from '@angular/core';
-import {ReportingTemplate} from './atomic/templates/reporting.template';
+import {ReportingComponent} from './atomic/templates/reporting.template';
 
 @NgModule({
   declarations: [
-    ReportingTemplate
+    ReportingComponent
   ],
   exports: [
-    ReportingTemplate
+    ReportingComponent
   ]
 })
 export class ReportingModule {

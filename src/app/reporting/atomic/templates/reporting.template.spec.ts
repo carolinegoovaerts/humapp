@@ -1,17 +1,17 @@
 import {TestBed} from '@angular/core/testing';
 import {async} from 'q';
-import {ReportingTemplate} from './reporting.template';
+import {ReportingComponent} from './reporting.template';
 
-describe('ReportingTemplate', () => {
+describe('ReportingComponent', () => {
 
   beforeEach(async(() => {
-    const promise = TestBed.configureTestingModule({
-      declarations: [ReportingTemplate],
+    TestBed.configureTestingModule({
+      declarations: [ReportingComponent],
     }).compileComponents();
   }));
 
   it('should create the template', () => {
-    const fixture = TestBed.createComponent(ReportingTemplate);
+    const fixture = TestBed.createComponent(ReportingComponent);
     const component = fixture.debugElement.componentInstance;
     expect(component).toBeTruthy();
   });
