@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import * as L from 'leaflet';
 
+// TODO fix improper displaying of tiles
 @Component({
   selector: 'app-map',
   templateUrl: './map.molecule.html',
