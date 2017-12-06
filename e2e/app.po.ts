@@ -10,14 +10,14 @@ export class HomePage {
   }
 
   static getReportSection() {
-    return element(by.css('app-root .report'));
+    return element(by.css('app-root #report'));
   }
 
   static getSignUpSection() {
-    return element(by.css('app-root .sign-up'));
+    return element(by.css('app-root #sign-up'));
   }
 
   static getMapSection() {
-    return element(by.css('app-root .map'));
+    return element(by.css('app-root #map'));
   }
 }
