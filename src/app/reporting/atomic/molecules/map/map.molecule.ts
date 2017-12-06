@@ -1,11 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import * as L from 'leaflet';
 
-// TODO fix improper displaying of tiles
 @Component({
   selector: 'app-map',
   templateUrl: './map.molecule.html',
-  styleUrls: ['../../../../../../node_modules/leaflet/dist/leaflet.css', './map.molecule.css']
+  styleUrls: ['./map.molecule.css']
 })
 export class MapComponent implements OnInit {
   private map: L.Map;
@@ -14,7 +13,7 @@ export class MapComponent implements OnInit {
   });
 
   ngOnInit(): void {
-    this.map = L.map('map').setView([52.1, 5], 7);
+    this.map = L.map('map').setView([52.1, 5.1], 7);
     this.baseLayer.addTo(this.map);
   }
 }
