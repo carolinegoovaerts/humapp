@@ -5,7 +5,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "copy-leaflet": "rimraf src/assets/leaflet.* && copyfiles -f **/dist/leaflet.js **/dist/leaflet.css src/assets",
+    "secure-leaflet": "sed -i .bak 's/http:/https:/g' src/assets/leaflet.js && rimraf src/assets/*.bak",
+    "build": "npm run copy-leaflet && npm run secure-leaflet && ng build",
     "test": "ng test",
     "verify": "ng lint && ng test -sr -cc && ng e2e",
     "lint": "ng lint",
@@ -35,6 +37,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.0.1",
+    "copyfiles": "^1.2.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
@@ -43,6 +46,7 @@
     "karma-jasmine": "~1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "protractor": "~5.1.2",
+    "rimraf": "^2.6.2",
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
