@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "import-leaflet": "copyfiles -f **/dist/leaflet.js **/dist/leaflet.css ./src/assets/leaflet",
+    "build": "npm run import-leaflet && ng build",
     "test": "ng test",
     "verify": "ng lint && ng test -sr -cc && ng e2e",
     "lint": "ng lint",

@@ -5,6 +5,9 @@
 /tmp
 /out-tsc
 
+# imported files
+/src/assets/leaflet
+
 # dependencies
 /node_modules
 
