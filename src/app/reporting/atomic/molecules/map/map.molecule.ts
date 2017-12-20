@@ -8,8 +8,8 @@ import * as L from 'leaflet';
 })
 export class MapComponent implements OnInit {
   private map: L.Map;
-  private baseLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  private baseLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   });
 
   ngOnInit(): void {
