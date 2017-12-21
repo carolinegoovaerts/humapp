@@ -1,7 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # imports
-/src/assets/leaflet.*
+/src/assets/leaflet
 
 # compiled output
 /dist
